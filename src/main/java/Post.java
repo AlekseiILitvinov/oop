@@ -2,8 +2,7 @@ public class Post {
 	//props and fields here
 	long id;
 	long created;
-	String author;
-	String avatarUrl;
+	User author;
 	String content;
 	int likes;
 	int comments;

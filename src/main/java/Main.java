@@ -9,5 +9,17 @@ public class Main {
 
 		String text = "IT Academy";
 		System.out.println(text);
+
+		System.out.println(post.author);
+		User vasya = new User();
+		vasya.id = 1;
+		vasya.name = "Василий";
+
+		post.author = vasya; // author prop is linked to the vasya obj
+
+		User boss = vasya;
+		boss.avatarUrl = "https://hippi.ru";
+		System.out.println(post.author.avatarUrl);
+
 	}
 }
